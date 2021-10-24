@@ -5,7 +5,6 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     public static InputManager instance;
-
     void Awake()
     {
         if (instance == null)
@@ -17,6 +16,7 @@ public class InputManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     public GameObject player;
     public float a;
     
@@ -26,7 +26,7 @@ public class InputManager : MonoBehaviour
             a = -1;
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
-            a = 1;
+            a = -1;
 
         if (Input.GetKeyDown(KeyCode.LeftArrow)|| Input.GetKeyDown(KeyCode.RightArrow))
             a = 0;
