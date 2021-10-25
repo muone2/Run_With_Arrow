@@ -22,7 +22,10 @@ public class ArrowSpawner : MonoBehaviour
     GameObject[,] arrow = new GameObject[4,11];
     Vector3 poolPosition = new Vector3(10,10,0);
     int[] fieldArrowCount = new int[4];
-    public float playtime = -2;
+    public float playtime;
+    public int progresseStart = 0;
+    public int progresseEnd = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,12 +46,16 @@ public class ArrowSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playtime += Time.deltaTime;
-        if (playtime > 0.465116)  //노래가 129bpm, 1분에 129번의 마디가 들어감. 즉 1마디당 60/129
+        if (playtime < 10)
+        {
+            playtime += Time.deltaTime;
+        }
+        if (playtime > 0.465116 && progresseStart<172)  //노래가 129bpm, 1분에 129번의 마디가 들어감. 즉 1마디당 60/129
         {
             SpawnArrow();
             playtime = 0;
         }
+
     }
 
     void SpawnArrow()
@@ -59,12 +66,26 @@ public class ArrowSpawner : MonoBehaviour
         fieldArrowCount[a]++;
         if (fieldArrowCount[a] >= 11)
             fieldArrowCount[a] = 0;
+        progressStartAdd();
     }
 
     public void BackPoolArrow(GameObject arrow)
     {
-       arrow.transform.position = poolPosition;
-       arrow.SetActive(false);
-        
+        arrow.transform.position = poolPosition;
+        arrow.SetActive(false);
+        arrow.GetComponent<MoveArrow>().isfinish = false;
+
+
+    }
+
+    public void progressStartAdd()
+    {
+        progresseStart++;
+       // Debug.Log(progresseStart);
+    }
+    public void progressEndAdd()
+    {
+        progresseEnd++;
+        Debug.Log(progresseEnd);
     }
 }

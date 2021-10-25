@@ -8,7 +8,7 @@ public class MoveArrow : MonoBehaviour
     public Vector3 movementset = new Vector3(0, 1.0f, 0);
     float speed = 5f;
     int effecttypy;
-    bool isfinish = false;
+    public bool isfinish = false;
 
     // Update is called once per frame
     void Update()
