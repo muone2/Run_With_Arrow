@@ -8,6 +8,7 @@ public class MoveGround : MonoBehaviour
 {
     public GameObject[] ground;
     Vector3 movementset = new Vector3(-1.0f, 0, 0);
+    public GameObject buttonSound;
     [SerializeField] float speed;
 
     // Start is called before the first frame update
@@ -31,6 +32,9 @@ public class MoveGround : MonoBehaviour
 
     public void ChangeScene()
     {
+        buttonSound.SetActive(false);
+        buttonSound.SetActive(true);
+        DontDestroyOnLoad(buttonSound);
         SceneManager.LoadScene("InGame");
     }
 

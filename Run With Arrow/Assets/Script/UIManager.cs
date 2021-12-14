@@ -25,6 +25,10 @@ public class UIManager : MonoBehaviour
     public GameObject endingCanvas;
     public Text endingScore;
 
+    public GameObject sound1;
+    public GameObject sound2;
+    public GameObject sound3;
+
     bool endingOn = false;
 
     private void Update()
@@ -43,11 +47,29 @@ public class UIManager : MonoBehaviour
         ArrowSpawner.instance.progressEndAdd();
         image.GetComponent<Image>().sprite = effectImages[a];
         if (a == 0)
+        {
+            sound1.SetActive(false);
+            sound2.SetActive(false);
+            sound3.SetActive(false);
+            sound1.SetActive(true);
             score = score - 1;
+        }
         if (a == 1)
+        {
+            sound1.SetActive(false);
+            sound2.SetActive(false);
+            sound3.SetActive(false);
+            sound2.SetActive(true);
             score = score + 3;
+        }
         if (a == 2)
+        {
+            sound1.SetActive(false);
+            sound2.SetActive(false);
+            sound3.SetActive(false);
+            sound3.SetActive(true);
             score = score + 5;
+        }
     }
 
     public void Ending()

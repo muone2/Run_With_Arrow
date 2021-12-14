@@ -29,8 +29,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -85,35 +83,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 622}
+      Script: {instanceID: 624}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1508}
     - Class: 114
-      Script: {instanceID: 1574}
+      Script: {instanceID: 1576}
     - Class: 114
-      Script: {instanceID: 1606}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 1904}
+      Script: {instanceID: 1906}
     - Class: 114
-      Script: {instanceID: 2202}
+      Script: {instanceID: 2204}
     - Class: 114
-      Script: {instanceID: 2382}
+      Script: {instanceID: 2384}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 3348}
+      Script: {instanceID: 3350}
     - Class: 114
-      Script: {instanceID: 3524}
+      Script: {instanceID: 3526}
     - Class: 114
-      Script: {instanceID: 3650}
+      Script: {instanceID: 3652}
     - Class: 114
-      Script: {instanceID: 5372}
+      Script: {instanceID: 5374}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -176,29 +174,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 622}
+      Script: {instanceID: 624}
     - Class: 114
-      Script: {instanceID: 1506}
+      Script: {instanceID: 1508}
     - Class: 114
-      Script: {instanceID: 1606}
+      Script: {instanceID: 1608}
     - Class: 114
-      Script: {instanceID: 1904}
+      Script: {instanceID: 1906}
     - Class: 114
-      Script: {instanceID: 2202}
+      Script: {instanceID: 2204}
     - Class: 114
-      Script: {instanceID: 2382}
+      Script: {instanceID: 2384}
     - Class: 114
-      Script: {instanceID: 2618}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2778}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 2994}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 3348}
+      Script: {instanceID: 3350}
     - Class: 114
-      Script: {instanceID: 3650}
+      Script: {instanceID: 3652}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -246,7 +244,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: 4402ba0b80d633e78c254775e4a24c51
+      Hash: 9e2525734787d693539091601325fd3b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIManager
@@ -324,7 +322,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 38ea25d0b3093423a3233cdd036e3805
+      Hash: ebf73a941b4861dd10648d22f03ccc08
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MoveGround
